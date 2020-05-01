@@ -12,9 +12,9 @@ endif()
 
 # find package component
 if(MrtOpenCV_FIND_REQUIRED)
-	find_package(OpenCV REQUIRED)
+	find_package(OpenCV 3 REQUIRED)
 elseif(MrtOpenCV_FIND_QUIETLY)
-	find_package(OpenCV QUIET)
+	find_package(OpenCV 3 QUIET)
 else()
-	find_package(OpenCV)
+	find_package(OpenCV 3)
 endif()
